@@ -20,7 +20,7 @@ html, body, div {
         "footer footer footer";
 
     /* Bonus Phase */
-    /* Your code here */
+    row-gap: 15px;
 }
 .item-1 {
     background-color: #87a7b3; /* steel blue */
@@ -53,6 +53,7 @@ html, body, div {
 
     /* Bonus Phase */
     grid-area: .;
+    width: 100px;
 }
 
 /* ====== */
@@ -62,5 +63,10 @@ html, body, div {
     margin: 20px;
 
     /* Phase 2 */
-    /* Your code here */
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(6, 50px);
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
 }
